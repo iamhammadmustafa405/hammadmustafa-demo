@@ -1,0 +1,132 @@
+Below is a structured list of commonly used commands in Git, grouped by purpose.
+
+---
+
+## 1. Setup & Configuration
+
+* `git config --global user.name "Your Name"`
+* `git config --global user.email "you@example.com"`
+* `git config --list`
+* `git config --global core.editor "code"`
+* `git config --global init.defaultBranch main`
+
+---
+
+## 2. Repository Creation
+
+* `git init` → Initialize new repo
+* `git clone <url>` → Copy repo from remote
+
+---
+
+## 3. Basic Workflow
+
+* `git status` → Check changes
+* `git add <file>` → Stage file
+* `git add .` → Stage all
+* `git commit -m "message"` → Save changes
+* `git commit -am "message"` → Add + commit (tracked files only)
+
+---
+
+## 4. Branching
+
+* `git branch` → List branches
+* `git branch <name>` → Create branch
+* `git checkout <branch>` → Switch branch
+* `git checkout -b <branch>` → Create + switch
+* `git switch <branch>` → Modern switch
+* `git switch -c <branch>` → Create + switch
+* `git branch -d <branch>` → Delete branch
+
+---
+
+## 5. Merging & Rebasing
+
+* `git merge <branch>` → Merge branch
+* `git rebase <branch>` → Reapply commits
+* `git rebase -i HEAD~n` → Interactive rebase
+
+---
+
+## 6. Remote Repositories
+
+* `git remote add origin <url>`
+* `git remote -v`
+* `git push origin <branch>`
+* `git push -u origin <branch>`
+* `git pull origin <branch>`
+* `git fetch`
+* `git clone <url>`
+
+---
+
+## 7. Undo Changes
+
+* `git restore <file>` → Discard changes
+* `git restore --staged <file>` → Unstage
+* `git reset <file>` → Unstage (older)
+* `git reset --hard` → Reset everything
+* `git revert <commit>` → Undo commit safely
+
+---
+
+## 8. Logs & History
+
+* `git log`
+* `git log --oneline`
+* `git log --graph`
+* `git show <commit>`
+* `git diff`
+* `git diff --staged`
+
+---
+
+## 9. Stashing
+
+* `git stash`
+* `git stash pop`
+* `git stash list`
+* `git stash apply`
+
+---
+
+## 10. Tags
+
+* `git tag`
+* `git tag <name>`
+* `git tag -a <name> -m "message"`
+* `git push origin <tag>`
+
+---
+
+## 11. File Operations
+
+* `git rm <file>`
+* `git mv <old> <new>`
+
+---
+
+## 12. Advanced / Useful
+
+* `git clean -f` → Remove untracked files
+* `git cherry-pick <commit>`
+* `git blame <file>`
+* `git reflog`
+* `git bisect`
+
+---
+
+## 13. Help
+
+* `git help`
+* `git help <command>`
+* `git <command> --help`
+
+---
+
+If you want, I can convert this into a **cheat sheet PDF**, or give **real-world examples** for each command.
+
+
+ls - force   (for showing hidden files in powrshell)
+ls    (show files)
